@@ -173,7 +173,7 @@
             (start-process "org-sync-push" "*org-sync*" "git" "push")))))))
 
 ;; Запускать синхронизацию каждые 10 минут
-(run-with-timer 0 (* 10 60) #'my/org-git-sync)
+(run-with-timer 0 (* 1 60) #'my/org-git-sync)
 
 
 
