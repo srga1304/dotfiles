@@ -27,7 +27,7 @@
      "56044c5a9cc45b6ec45c0eb28df100d3f0a576f18eef33ff8ff5d32bac2d9700"
      "6a5584ee8de384f2d8b1a1c30ed5b8af1d00adcbdcd70ba1967898c265878acf"
      "014cb63097fc7dbda3edf53eb09802237961cbb4c9e9abd705f23b86511b0a69" default))
- '(org-agenda-files '("/home/sergey/org/todo.org"))
+ '(org-agenda-files '("~/org/todo.org"))
  '(package-selected-packages
    '(org-journal all-the-icons ob-translate go-translate doom-themes)))
 (custom-set-faces
