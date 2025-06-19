@@ -1,0 +1,7 @@
+# ~/.config/alacritty/alacritty.yml
+
+font:
+  size: 10
+
+window:
+  title: "Alacritty"
