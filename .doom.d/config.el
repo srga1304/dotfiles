@@ -73,12 +73,12 @@
 ;; There are two ways to load a theme. Both assume the theme is installed and
 ;; available. You can either set `doom-theme' or manually load a theme with the
 ;; `load-theme' function. This is the default:
-(setq doom-theme 'doom-1337)
+(setq doom-theme 'doom-monokai-classic)
 
 ;; This determines the style of line numbers in effect. If set to `nil', line
 ;; numbers are disabled. For relative line numbers, set this to `relative'.
 
-;;(setq doom-theme nil)
+;;(setq doom-theme 'cusom-theme)
 
 (setq display-line-numbers-type 'relative)
 
@@ -173,7 +173,7 @@
             (start-process "org-sync-push" "*org-sync*" "git" "push")))))))
 
 ;; Запускать синхронизацию каждые 10 минут
-(run-with-timer 0 (* 1 60) #'my/org-git-sync)
+(run-with-timer 0 (* 15 60) #'my/org-git-sync)
 
 
 
@@ -223,9 +223,11 @@
 
 (assoc-delete-all "Jump to bookmark" +doom-dashboard-menu-sections)
 
+(assoc-delete-all "Reload last session" +doom-dashboard-menu-sections)
+(assoc-delete-all "Open private configuration" +doom-dashboard-menu-sections)
 (assoc-delete-all "Open documentation" +doom-dashboard-menu-sections)
-(add-hook! '+doom-dashboard-functions :append
-  (insert "\n" (+doom-dashboard--center +doom-dashboard--width "Powered by Emacs!")))
+;;(add-hook! '+doom-dashboard-functions :append
+;;  (insert "\n" (+doom-dashboard--center +doom-dashboard--width "Powered by Emacs!")))
 
 
 (defun my/doom-dashboard-hide-mode-line ()
