@@ -9,4 +9,6 @@ ln -sf ~/dotfiles/kitty ~/.config/kitty
 
 ln -sf ~/dotfiles/tmux ~/tmux
 
+ln -sf ~/dotfiles/.zshrc ~/.zshrc
+
 echo "Dotfiles установлены."
