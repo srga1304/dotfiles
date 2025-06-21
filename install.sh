@@ -7,4 +7,6 @@ ln -sf ~/dotfiles/alacritty ~/.config/alacritty
 # Kitty
 ln -sf ~/dotfiles/kitty ~/.config/kitty
 
+ln -sf ~/dotfiles/tmux ~/tmux
+
 echo "Dotfiles установлены."
